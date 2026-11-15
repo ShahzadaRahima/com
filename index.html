@@ -4,628 +4,657 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shahzada Rahim Abbas | International Relations & Geopolitics</title>
-    <meta name="description" content="International Relations Researcher & PhD Candidate in Civilizational Studies at Ibn Haldun University">
+    <meta name="description" content="Shahzada Rahim Abbas - PhD Candidate in Civilizational Studies & International Relations Researcher">
     
-    <!-- Google Fonts -->
+    <!-- Classic Academic Serif & Sans Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
-            --bg-color: #ffffff;
-            --text-color: #2b2b2b;
+            --bg-page: #f4f4f2;
+            --bg-container: #ffffff;
+            --primary-navy: #14284b;
+            --accent-gold: #8c6d46;
+            --text-main: #222222;
             --text-muted: #555555;
-            --accent-color: #1b365d;
-            --accent-hover: #0f233f;
-            --border-color: #e5e5e5;
-            --badge-bg: #f4f6f8;
-            --max-width: 1050px;
-        }
-
-        html {
-            scroll-behavior: smooth;
+            --border-light: #dddddd;
+            --max-width: 960px;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.7;
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
             margin: 0;
-            padding: 0;
+            padding: 25px 15px 60px 15px;
+            line-height: 1.65;
         }
 
-        .container {
+        .page-wrapper {
             max-width: var(--max-width);
             margin: 0 auto;
-            padding: 40px 20px 80px 20px;
+            background-color: var(--bg-container);
+            border: 1px solid var(--border-light);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
         }
 
-        /* Top Navigation Header */
-        .top-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 18px;
-            margin-bottom: 45px;
+        /* Header Banner (Mearsheimer-style top title block) */
+        .site-banner {
+            background-color: var(--primary-navy);
+            color: #ffffff;
+            text-align: center;
+            padding: 38px 20px 32px 20px;
+            border-bottom: 4px solid var(--accent-gold);
         }
 
-        .site-title-area h1 {
-            font-family: 'Lora', serif;
-            font-size: 1.5rem;
-            margin: 0 0 2px 0;
-            color: #111;
+        .site-banner h1 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 2.5rem;
             font-weight: 600;
-        }
-
-        .site-subtitle {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            letter-spacing: 0.6px;
+            letter-spacing: 1px;
+            margin: 0 0 6px 0;
             text-transform: uppercase;
         }
 
-        .nav-tabs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            font-size: 0.92rem;
-        }
-
-        .nav-tabs a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-weight: 500;
-            padding-bottom: 3px;
-            transition: color 0.2s ease;
-        }
-
-        .nav-tabs a:hover, .nav-tabs a.active {
-            color: var(--accent-color);
-            border-bottom: 2px solid var(--accent-color);
-        }
-
-        /* Main Two-Column Layout */
-        .main-layout {
-            display: grid;
-            grid-template-columns: 240px 1fr;
-            gap: 60px;
-            align-items: start;
-        }
-
-        /* Left Sidebar */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            position: sticky;
-            top: 25px;
-        }
-
-        .profile-photo {
-            width: 100%;
-            height: auto;
-            border-radius: 3px;
-            object-fit: cover;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border: 1px solid var(--border-color);
-        }
-
-        .sidebar-info h2 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin: 0 0 4px 0;
-            color: #111;
-        }
-
-        .sidebar-info p {
-            font-size: 0.86rem;
-            color: var(--text-muted);
-            margin: 0 0 8px 0;
-            line-height: 1.4;
-        }
-
-        .sidebar-links {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            font-size: 0.85rem;
-            margin-top: 5px;
-            border-top: 1px solid var(--border-color);
-            padding-top: 14px;
-        }
-
-        .sidebar-links a {
-            color: var(--accent-color);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .sidebar-links a:hover {
-            text-decoration: underline;
-            color: var(--accent-hover);
-        }
-
-        /* Content Area */
-        .content-area section {
-            margin-bottom: 50px;
-        }
-
-        .content-area h2 {
-            font-family: 'Lora', serif;
-            font-size: 1.9rem;
-            margin-top: 0;
-            margin-bottom: 18px;
-            color: #111;
-            font-weight: 500;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
-        }
-
-        .content-area h3 {
-            font-family: 'Lora', serif;
-            font-size: 1.3rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #111;
-            font-weight: 600;
-        }
-
-        .content-area p {
-            font-size: 0.98rem;
-            margin-bottom: 16px;
-            color: #333;
-            text-align: justify;
-        }
-
-        /* CV Entries */
-        .cv-entry {
-            margin-bottom: 22px;
-        }
-
-        .cv-entry-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            gap: 6px;
-        }
-
-        .cv-title {
-            font-weight: 600;
-            font-size: 0.98rem;
-            color: #111;
-        }
-
-        .cv-date {
-            font-size: 0.85rem;
-            color: var(--accent-color);
-            font-weight: 500;
-        }
-
-        .cv-org {
-            font-size: 0.91rem;
-            color: var(--text-muted);
-            margin-top: 2px;
-        }
-
-        .cv-details {
-            font-size: 0.89rem;
-            color: #444;
-            margin-top: 4px;
-        }
-
-        /* Research Items */
-        .research-item {
-            margin-bottom: 14px;
-            font-size: 0.95rem;
-        }
-
-        .research-item strong {
-            color: #111;
-        }
-
-        /* Publications */
-        .pub-year {
-            font-family: 'Lora', serif;
+        .site-banner .tagline {
+            font-family: 'Crimson Pro', Georgia, serif;
             font-size: 1.15rem;
-            font-weight: 600;
-            color: var(--accent-color);
-            margin-top: 25px;
-            margin-bottom: 10px;
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 4px;
-        }
-
-        .pub-list {
-            list-style-type: none;
-            padding: 0;
+            font-style: italic;
+            color: #d9e1ec;
             margin: 0;
         }
 
+        /* Horizontal Navigation Menu Bar */
+        .main-nav {
+            background-color: #f9f9f8;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .main-nav button {
+            background: none;
+            border: none;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--primary-navy);
+            padding: 14px 24px;
+            cursor: pointer;
+            border-right: 1px solid #ececec;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .main-nav button:first-child {
+            border-left: 1px solid #ececec;
+        }
+
+        .main-nav button:hover {
+            background-color: #eef1f5;
+        }
+
+        .main-nav button.active {
+            background-color: var(--primary-navy);
+            color: #ffffff;
+        }
+
+        /* Main Content Area */
+        .content-body {
+            padding: 45px 50px;
+        }
+
+        .tab-section {
+            display: none;
+            animation: fadeIn 0.25s ease-in;
+        }
+
+        .tab-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Home Layout: Portrait Left + Bio Right */
+        .home-grid {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .portrait-box {
+            text-align: center;
+            border: 1px solid var(--border-light);
+            padding: 10px;
+            background: #fafafa;
+        }
+
+        .portrait-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .portrait-caption {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .academic-ids {
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 0.86rem;
+            text-align: left;
+        }
+
+        .academic-ids a {
+            color: var(--primary-navy);
+            text-decoration: none;
+        }
+
+        .academic-ids a:hover {
+            text-decoration: underline;
+            color: var(--accent-gold);
+        }
+
+        h2.section-heading {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.85rem;
+            color: var(--primary-navy);
+            border-bottom: 2px solid var(--primary-navy);
+            padding-bottom: 6px;
+            margin-top: 0;
+            margin-bottom: 22px;
+        }
+
+        h3.sub-heading {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.35rem;
+            color: var(--accent-gold);
+            margin-top: 28px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 4px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 1.02rem;
+            text-align: justify;
+        }
+
+        /* Publications & Books Styling */
         .pub-item {
-            margin-bottom: 18px;
-            font-size: 0.93rem;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px dotted var(--border-light);
+        }
+
+        .pub-item:last-child {
+            border-bottom: none;
+        }
+
+        .pub-title {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.18rem;
+            font-weight: 600;
+            margin-bottom: 4px;
         }
 
         .pub-title a {
-            font-weight: 600;
-            color: var(--accent-color);
+            color: var(--primary-navy);
             text-decoration: none;
         }
 
         .pub-title a:hover {
+            color: var(--accent-gold);
             text-decoration: underline;
-            color: var(--accent-hover);
         }
 
-        .pub-authors {
+        .pub-meta {
+            font-size: 0.94rem;
             color: var(--text-muted);
-            margin-top: 2px;
         }
 
-        .pub-venue {
-            font-style: italic;
-            color: #555;
-            margin-top: 2px;
-        }
-
-        .index-tag {
+        .badge {
             display: inline-block;
-            font-size: 0.72rem;
-            font-style: normal;
+            font-size: 0.75rem;
             font-weight: 600;
-            background: var(--badge-bg);
-            color: var(--accent-color);
-            padding: 1px 6px;
-            border-radius: 3px;
+            background: #eef1f5;
+            color: var(--primary-navy);
+            padding: 1px 7px;
+            border: 1px solid #cfd8e3;
+            border-radius: 2px;
             margin-left: 6px;
-            border: 1px solid var(--border-color);
         }
 
-        .clean-list {
-            padding-left: 18px;
-            margin: 0;
-            font-size: 0.93rem;
+        /* CV Entries */
+        .cv-row {
+            margin-bottom: 18px;
         }
 
-        .clean-list li {
-            margin-bottom: 10px;
-            color: #333;
+        .cv-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            color: #111;
+            flex-wrap: wrap;
         }
 
-        footer {
+        .cv-date {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .cv-sub {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul.classic-list {
+            padding-left: 20px;
+            margin: 10px 0 20px 0;
+        }
+
+        ul.classic-list li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #f9f9f8;
+            border-top: 1px solid var(--border-light);
             text-align: center;
-            font-size: 0.84rem;
-            color: #718096;
-            border-top: 1px solid var(--border-color);
-            padding-top: 25px;
-            margin-top: 60px;
+            padding: 20px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
         }
 
-        /* Responsive Mobile Layout */
         @media (max-width: 768px) {
-            .top-header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 12px;
+            .content-body {
+                padding: 25px 20px;
             }
-            .nav-tabs {
-                gap: 12px;
-            }
-            .main-layout {
+            .home-grid {
                 grid-template-columns: 1fr;
-                gap: 30px;
             }
-            .sidebar {
-                position: static;
+            .portrait-box {
+                max-width: 240px;
+                margin: 0 auto;
             }
-            .profile-photo {
-                max-width: 180px;
+            .main-nav button {
+                padding: 10px 14px;
+                font-size: 0.85rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Top Navigation Bar -->
-        <header class="top-header">
-            <div class="site-title-area">
-                <h1>Shahzada Rahim Abbas</h1>
-                <div class="site-subtitle">International Relations & Geopolitics Theorist</div>
+<div class="page-wrapper">
+    <!-- Top Academic Banner -->
+    <header class="site-banner">
+        <h1>Shahzada Rahim Abbas</h1>
+        <p class="tagline">International Relations, Geopolitics &amp; Civilizational Studies</p>
+    </header>
+
+    <!-- Horizontal Tab Bar (Mearsheimer-style navigation) -->
+    <nav class="main-nav">
+        <button class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
+        <button class="tab-btn" onclick="openTab(event, 'books')">Books</button>
+        <button class="tab-btn" onclick="openTab(event, 'articles')">Articles</button>
+        <button class="tab-btn" onclick="openTab(event, 'cv')">Curriculum Vitae</button>
+        <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
+    </nav>
+
+    <!-- Main Body Container -->
+    <main class="content-body">
+
+        <!-- HOME TAB -->
+        <div id="home" class="tab-section active">
+            <div class="home-grid">
+                <div class="portrait-box">
+                    <img src="IMG_5954.jpg" alt="Shahzada Rahim Abbas">
+                    <div class="portrait-caption">
+                        <strong>Shahzada Rahim Abbas</strong><br>
+                        PhD Candidate in Civilizational Studies<br>
+                        Ibn Haldun University, Istanbul
+                    </div>
+                    <div class="academic-ids">
+                        <a href="https://scholar.google.com/citations?user=Shahzada+Rahim+Abbas" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
+                        <a href="https://orcid.org/0000-0002-9242-5131" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID: 0000-0002-9242-5131</a>
+                        <a href="https://www.scopus.com/authid/detail.uri?authorId=59420346400" target="_blank"><i class="fa-solid fa-id-badge"></i> Scopus: 59420346400</a>
+                        <a href="https://www.linkedin.com/in/shahzada-rahim-6783a29a" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="section-heading">Biography</h2>
+                    <p>
+                        Shahzada Rahim Abbas is a PhD Candidate in Civilizational Studies at the Alliance of Civilizations Institute (MEDİT), Ibn Haldun University in Istanbul, Türkiye. His scholarship bridges historical inquiry and contemporary structural analysis, examining how states, educational institutions, and economic systems evolve under shifting global power dynamics.
+                    </p>
+                    <p>
+                        Holding a Master of Arts in International Relations (GPA 3.95, Department Distinction) from Erciyes University and a Bachelor of Science (Gold Medalist) from International Islamic University, Islamabad, he focuses on great-power competition, Eurasian and Arctic geopolitics, hybrid security, and regional economic development.
+                    </p>
+
+                    <h3 class="sub-heading">Core Research Areas</h3>
+                    <ul class="classic-list">
+                        <li><strong>Geopolitics &amp; Global Power Shifts:</strong> Transitions in international order, Eurasian integration, Arctic geopolitics, hybrid warfare, and multipolarity.</li>
+                        <li><strong>Political Economy &amp; Geoeconomics:</strong> Macroeconomic dynamics, energy transition, Belt and Road infrastructure initiatives (BRI), and regional development.</li>
+                        <li><strong>Historical State Governance &amp; Educational Policy:</strong> State-building, legal philosophy, administrative reform, and institutional education frameworks.</li>
+                        <li><strong>Civilizational Studies &amp; Theory of History:</strong> Civilizational encounters, critiques of Eurocentrism, conceptual history (<em>Begriffsgeschichte</em>), and historical periodization.</li>
+                    </ul>
+                </div>
             </div>
-            <nav class="nav-tabs">
-                <a href="#overview" class="active">Overview</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#publications">Publications</a>
-                <a href="#skills">Skills & Honors</a>
-            </nav>
-        </header>
-
-        <!-- Main Layout -->
-        <div class="main-layout">
-            
-            <!-- Left Sidebar -->
-            <aside class="sidebar">
-                <img src="IMG_5954.jpg" alt="Shahzada Rahim Abbas" class="profile-photo">
-                
-                <div class="sidebar-info">
-                    <h2>Shahzada Rahim Abbas</h2>
-                    <p>PhD Candidate in Civilizational Studies<br>International Relations Researcher</p>
-                    <p><strong>Alliance of Civilizations Institute (MEDİT)</strong><br>Ibn Haldun University<br>Istanbul, Türkiye</p>
-                </div>
-                
-                <div class="sidebar-links">
-                    <a href="mailto:abbas.hashmi63@gmail.com"><i class="fa-solid fa-envelope"></i> abbas.hashmi63@gmail.com</a>
-                    <a href="tel:+905528616438"><i class="fa-solid fa-phone"></i> +90 552 861 6438</a>
-                    <a href="https://orcid.org/0000-0002-9242-5131" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID: 0000-0002-9242-5131</a>
-                    <a href="https://www.scopus.com/authid/detail.uri?authorId=59420346400" target="_blank"><i class="fa-solid fa-id-badge"></i> Scopus ID: 59420346400</a>
-                    <a href="https://scholar.google.com" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                </div>
-            </aside>
-
-            <!-- Right Content Area -->
-            <main class="content-area">
-                
-                <!-- Overview Section -->
-                <section id="overview">
-                    <h2>Overview</h2>
-                    <p>
-                        I am an International Relations researcher and PhD Candidate in Civilizational Studies at the Alliance of Civilizations Institute (MEDİT), Ibn Haldun University in Istanbul, Türkiye. My scholarship bridges historical inquiry and contemporary structural analysis, focusing on great-power competition, Eurasian and Arctic geopolitics, hybrid security, maritime-relevant policy analysis, and regional economic development.
-                    </p>
-                    <p>
-                        With a Master's degree earned with department distinction (GPA 3.95) and ten peer-reviewed publications, I specialize in comparative policy analysis, quantitative econometric methods (SPSS/Stata), and multilateral research coordination across five languages.
-                    </p>
-
-                    <h3 style="margin-top: 30px;">Core Research Domains</h3>
-                    <div class="research-item">
-                        <strong>Geopolitics & Global Power Shifts:</strong> Investigating transitions in international order, Eurasian integration, Arctic geopolitics, hybrid warfare, and multipolarity.
-                    </div>
-                    <div class="research-item">
-                        <strong>Political Economy & Geoeconomics:</strong> Analyzing macroeconomic dynamics, energy transition, Belt and Road infrastructure initiatives (BRI), and regional development.
-                    </div>
-                    <div class="research-item">
-                        <strong>Historical State Governance & Policy:</strong> Examining state-building, legal philosophy, administrative reform, and educational policy under structural transitions.
-                    </div>
-                    <div class="research-item">
-                        <strong>Civilizational Studies & Theory of History:</strong> Engaging with civilizational encounters, critiques of Eurocentrism, conceptual history, and historical periodization.
-                    </div>
-                </section>
-
-                <!-- Education Section -->
-                <section id="education">
-                    <h2>Education</h2>
-                    
-                    <div class="cv-entry">
-                        <div class="cv-entry-header">
-                            <span class="cv-title">PhD Candidate in Civilizational Studies (MEDİT)</span>
-                            <span class="cv-date">2024 – Present</span>
-                        </div>
-                        <div class="cv-org">Ibn Haldun University — Istanbul, Türkiye</div>
-                    </div>
-
-                    <div class="cv-entry">
-                        <div class="cv-entry-header">
-                            <span class="cv-title">Master of Arts in International Relations</span>
-                            <span class="cv-date">2022 – 2024</span>
-                        </div>
-                        <div class="cv-org">Institute of Social Sciences, Erciyes University — Kayseri, Türkiye</div>
-                        <div class="cv-details">
-                            <strong>GPA:</strong> 3.95 / 4.00 (Department Distinction; CGPA 3.72)<br>
-                            <strong>Thesis:</strong> <em>Geopolitics of the New Great Game – A Comparative Study of Great Powers' Pivot Towards Central Asia</em>
-                        </div>
-                    </div>
-
-                    <div class="cv-entry">
-                        <div class="cv-entry-header">
-                            <span class="cv-title">Bachelor of Science in Political Science & International Relations</span>
-                            <span class="cv-date">2015 – 2019</span>
-                        </div>
-                        <div class="cv-org">Faculty of Social Sciences, International Islamic University — Islamabad, Pakistan</div>
-                        <div class="cv-details">
-                            <strong>GPA:</strong> 3.89 / 4.00 (Gold Medalist, Highest Achiever)
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Professional Experience Section -->
-                <section id="experience">
-                    <h2>Professional Experience</h2>
-
-                    <div class="cv-entry">
-                        <div class="cv-entry-header">
-                            <span class="cv-title">Expert Analyst</span>
-                            <span class="cv-date">2025 – Present</span>
-                        </div>
-                        <div class="cv-org">Association Sovereignty — Brazil</div>
-                    </div>
-
-                    <div class="cv-entry">
-                        <div class="cv-entry-header">
-                            <span class="cv-title">Program Coordinator</span>
-                            <span class="cv-date">2024 – Present</span>
-                        </div>
-                        <div class="cv-org">Global Peace Summit — Pakistan</div>
-                    </div>
-
-                    <div class="cv-entry">
-                        <div class="cv-entry-header">
-                            <span class="cv-title">Peer Reviewer</span>
-                            <span class="cv-date">2023 – Present</span>
-                        </div>
-                        <div class="cv-org">European Journal of Geopolitics</div>
-                    </div>
-
-                    <div class="cv-entry">
-                        <div class="cv-entry-header">
-                            <span class="cv-title">Research Assistant</span>
-                            <span class="cv-date">2020 – 2021</span>
-                        </div>
-                        <div class="cv-org">Iqbal Research Dialogue, International Islamic University — Islamabad, Pakistan</div>
-                    </div>
-                </section>
-
-                <!-- Publications Section -->
-                <section id="publications">
-                    <h2>Publications & Research</h2>
-                    
-                    <h3>Books & Monographs</h3>
-                    <ul class="pub-list">
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Más allá de la civilización y la historia: Que ha marcado un punto de inflexión sin precedentes en la historia de la filosofía (Spanish Edition)</a>
-                            </div>
-                            <div class="pub-authors">Shahzada Rahim</div>
-                            <div class="pub-venue">Ediciones Fides (2023)</div>
-                        </li>
-                        <li class="pub-item" style="margin-top: 15px;">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Beyond Civilization and History: A Philosophical Study of Modernist and Post-Modernist Perspectives on History</a>
-                            </div>
-                            <div class="pub-authors">Shahzada Rahim Abbas</div>
-                            <div class="pub-venue">Monograph (2020 / 2022) | ISBN: 9798691822254</div>
-                        </li>
-                    </ul>
-
-                    <h3 style="margin-top: 35px;">Peer-Reviewed Journal Articles</h3>
-
-                    <div class="pub-year">2026</div>
-                    <ul class="pub-list">
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Greening the Energy Mix: The Role of Environmental Policies in Reducing Fossil Fuel Consumption in EU-23 Countries</a>
-                            </div>
-                            <div class="pub-authors">Belet, N. H., Abbas, S. G., & Abbas, S. R.</div>
-                            <div class="pub-venue">The Japanese Political Economy (Taylor & Francis), Vol. 2, No. 2, pp. 1–19 (2026) <span class="index-tag">Scopus / WoS</span></div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">BRI and Infrastructure Development: Impact on the Economic Growth of Lower-Income African Countries</a>
-                            </div>
-                            <div class="pub-authors">Abbas, S. G., Abbas, S. R., & Belet, N. H.</div>
-                            <div class="pub-venue">The Indian Economic Journal (Sage), Vol. 74, No. 3 (2026) <span class="index-tag">Scopus</span></div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Can Europe Stay Productive? Macroeconomic and Demographic Pressures on Labor Productivity</a>
-                            </div>
-                            <div class="pub-authors">Belet, N. H., Abbas, S. G., & Abbas, S. R.</div>
-                            <div class="pub-venue">Population and Economics, Vol. 10, No. 1, pp. 164–182 (2026)</div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Deconstructing Eurocentric Narratives: A Critical Analysis of Civilization through the Works of Guizot, Gobineau, and Buckle</a>
-                            </div>
-                            <div class="pub-authors">Abbas, S. R.</div>
-                            <div class="pub-venue">Journal of Islamic Thought and Civilization, Vol. 16, No. 1, pp. 18–36 (2026)</div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">The Philosophy of Law in Enforcing Criminal Liability for Nominee Accounts: A Comparative Study of Indonesia and Pakistan</a>
-                            </div>
-                            <div class="pub-authors">Ginting, B. R., Suarda, I. G. W., Rato, D., Anggono, B. D., & Abbas, S. R.</div>
-                            <div class="pub-venue">PAMALI: Pattimura Magister Law Review, Vol. 6, No. 1, pp. 134–143 (2026)</div>
-                        </li>
-                    </ul>
-
-                    <div class="pub-year">2025</div>
-                    <ul class="pub-list">
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">The Emergence of Hybrid Warfare and the Future of Global Security: A Comparative Study of Russian and NATO's Hybrid Infrastructure in Ukraine</a>
-                            </div>
-                            <div class="pub-authors">Abbas, S. R.</div>
-                            <div class="pub-venue">The Rest: Journal of Politics and Development, Vol. 15, No. 2, pp. 198–212 (2025)</div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Is Colonization Possible During the Encounter Between Two Civilizations?</a>
-                            </div>
-                            <div class="pub-authors">Abbas, S. R.</div>
-                            <div class="pub-venue">Policy Perspectives, Vol. 22, No. 2, pp. 33–52 (2025)</div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Freshwater Scarcity and Conflict in Sub-Saharan Africa and Asia</a>
-                            </div>
-                            <div class="pub-authors">Abbas, S. R., & Obedgiu, S.</div>
-                            <div class="pub-venue">Cavendish Journal of Social Sciences and Management (CJSSM), Vol. 3, No. 1, pp. 1–19 (2025)</div>
-                        </li>
-                    </ul>
-
-                    <div class="pub-year">2024 & Earlier</div>
-                    <ul class="pub-list">
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Russia's Expanding Influence in the Arctic: A Comprehensive Analysis of the New Great Game in the North Pole</a>
-                            </div>
-                            <div class="pub-authors">Ozkan, G., & Abbas, S. R.</div>
-                            <div class="pub-venue">Journal of International Relations and Political Science Studies, Vol. 7, No. 1, pp. 1–27 (2024)</div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">The Impact of External Debt, Population Growth and Inflation on Unemployment: Evidence from Developing Countries</a>
-                            </div>
-                            <div class="pub-authors">Abbas, S. G., Abbas, S. R., & Munir, A.</div>
-                            <div class="pub-venue">Economics Business and Organization Research, Vol. 6, No. 1, pp. 1–14 (2024)</div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Russia’s Eurasian Union Dream: A Way Forward Towards Multipolar World Order</a>
-                            </div>
-                            <div class="pub-authors">Abbas, S. R.</div>
-                            <div class="pub-venue">Journal of Global Faultlines, Vol. 9, No. 1, pp. 33–43 (2022) <span class="index-tag">Scopus</span></div>
-                        </li>
-                        <li class="pub-item">
-                            <div class="pub-title">
-                                <a href="https://scholar.google.com" target="_blank">Russian Geopolitics and Eurasia: An Analytical Study of Russia's Role in the Eurasian Integration</a>
-                            </div>
-                            <div class="pub-authors">Abbas, S. R.</div>
-                            <div class="pub-venue">World Affairs: The Journal of International Issues, Vol. 24, No. 2, pp. 90–105 (2020)</div>
-                        </li>
-                    </ul>
-                </section>
-
-                <!-- Skills & Honors Section -->
-                <section id="skills">
-                    <h2>Skills & Honors</h2>
-                    
-                    <h3>Skills & Languages</h3>
-                    <ul class="clean-list" style="margin-bottom: 25px;">
-                        <li><strong>Quantitative & Statistical Analysis:</strong> SPSS & Stata (Advanced), Python & MATLAB (Beginner)</li>
-                        <li><strong>Research & Editorial:</strong> Comparative policy research, academic writing, and peer review (<em>European Journal of Geopolitics</em>)</li>
-                        <li><strong>Languages:</strong> English (C2), Turkish (C1), Hindi (C1), Urdu (C1), Arabic (A2)</li>
-                    </ul>
-
-                    <h3>Honors, Scholarships & Certifications</h3>
-                    <ul class="clean-list">
-                        <li><strong>Online Certification Course:</strong> <em>AI, Justice, and the Rule of Law</em> — Saïd Business School, University of Oxford (2026 – Present)</li>
-                        <li><strong>Certificate in Specialised Training Programme on Muslim Minority Studies (16 weeks / 48 hrs):</strong> Migration Research Foundation (GAV Akademi), Türkiye (Oct 2025 – Apr 2026)</li>
-                        <li><strong>Department Distinction:</strong> Highest Achiever, Master's Degree in International Relations, Erciyes University, 2024</li>
-                        <li><strong>Turkish Government Scholarship (YTB / TBBS):</strong> Full Master's funding, 2021–2024</li>
-                        <li><strong>Gold Medalist:</strong> Highest Achiever, Faculty of Social Sciences, International Islamic University, Islamabad, 2019</li>
-                        <li><strong>Certificate in Russia–European Relations:</strong> University of Tartu, Tallinn, Estonia, 2019</li>
-                    </ul>
-                </section>
-
-            </main>
         </div>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 Shahzada Rahim Abbas. Hosted on GitHub Pages.</p>
-        </footer>
-    </div>
+        <!-- BOOKS TAB -->
+        <div id="books" class="tab-section">
+            <h2 class="section-heading">Books &amp; Monographs</h2>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Mas+alla+de+la+civilizacion+y+la+historia+Shahzada+Rahim" target="_blank">
+                        Más allá de la civilización y la historia: Que ha marcado un punto de inflexión sin precedentes en la historia de la filosofía (Spanish Edition)
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    <strong>Author:</strong> Shahzada Rahim<br>
+                    <strong>Publisher:</strong> Ediciones Fides (2023)
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Beyond+Civilization+and+History+Shahzada+Rahim+Abbas" target="_blank">
+                        Beyond Civilization and History: A Philosophical Study of Modernist and Post-Modernist Perspectives on History
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    <strong>Author:</strong> Shahzada Rahim Abbas<br>
+                    <strong>Format:</strong> Monograph (2020 / 2022) | ISBN: 9798691822254
+                </div>
+            </div>
+        </div>
+
+        <!-- ARTICLES TAB -->
+        <div id="articles" class="tab-section">
+            <h2 class="section-heading">Peer-Reviewed Journal Articles</h2>
+
+            <h3 class="sub-heading">2026</h3>
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Greening+the+Energy+Mix+Reducing+Fossil+Fuel+Consumption+EU-23+Belet+Abbas" target="_blank">
+                        Greening the Energy Mix: The Role of Environmental Policies in Reducing Fossil Fuel Consumption in EU-23 Countries
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Belet, N. H., Abbas, S. G., &amp; Abbas, S. R. — <em>The Japanese Political Economy</em> (Taylor &amp; Francis), Vol. 2, No. 2, pp. 1–19 (2026) <span class="badge">Scopus / WoS</span>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=BRI+and+Infrastructure+Development+Lower-Income+African+Countries+Abbas+Belet" target="_blank">
+                        BRI and Infrastructure Development: Impact on the Economic Growth of Lower-Income African Countries
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Abbas, S. G., Abbas, S. R., &amp; Belet, N. H. — <em>The Indian Economic Journal</em> (Sage), Vol. 74, No. 3 (2026) <span class="badge">Scopus</span>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Can+Europe+Stay+Productive+Macroeconomic+Demographic+Pressures+Belet+Abbas" target="_blank">
+                        Can Europe Stay Productive? Macroeconomic and Demographic Pressures on Labor Productivity
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Belet, N. H., Abbas, S. G., &amp; Abbas, S. R. — <em>Population and Economics</em>, Vol. 10, No. 1, pp. 164–182 (2026)
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Deconstructing+Eurocentric+Narratives+Guizot+Gobineau+Buckle+Shahzada+Rahim+Abbas" target="_blank">
+                        Deconstructing Eurocentric Narratives: A Critical Analysis of Civilization through the Works of Guizot, Gobineau, and Buckle
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Abbas, S. R. — <em>Journal of Islamic Thought and Civilization</em>, Vol. 16, No. 1, pp. 18–36 (2026)
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Philosophy+of+Law+Enforcing+Criminal+Liability+Nominee+Accounts+Ginting+Abbas" target="_blank">
+                        The Philosophy of Law in Enforcing Criminal Liability for Nominee Accounts: A Comparative Study of Indonesia and Pakistan
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Ginting, B. R., Suarda, I. G. W., Rato, D., Anggono, B. D., &amp; Abbas, S. R. — <em>PAMALI: Pattimura Magister Law Review</em>, Vol. 6, No. 1, pp. 134–143 (2026)
+                </div>
+            </div>
+
+            <h3 class="sub-heading">2025</h3>
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Emergence+of+Hybrid+Warfare+Russian+NATO+Hybrid+Infrastructure+Ukraine+Abbas" target="_blank">
+                        The Emergence of Hybrid Warfare and the Future of Global Security: A Comparative Study of Russian and NATO's Hybrid Infrastructure in Ukraine
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Abbas, S. R. — <em>The Rest: Journal of Politics and Development</em>, Vol. 15, No. 2, pp. 198–212 (2025)
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Is+Colonization+Possible+During+the+Encounter+Between+Two+Civilizations+Abbas" target="_blank">
+                        Is Colonization Possible During the Encounter Between Two Civilizations?
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Abbas, S. R. — <em>Policy Perspectives</em>, Vol. 22, No. 2, pp. 33–52 (2025)
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Freshwater+Scarcity+and+Conflict+Sub-Saharan+Africa+Asia+Abbas+Obedgiu" target="_blank">
+                        Freshwater Scarcity and Conflict in Sub-Saharan Africa and Asia
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Abbas, S. R., &amp; Obedgiu, S. — <em>Cavendish Journal of Social Sciences and Management (CJSSM)</em>, Vol. 3, No. 1, pp. 1–19 (2025)
+                </div>
+            </div>
+
+            <h3 class="sub-heading">2024 &amp; Earlier</h3>
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Russia+Expanding+Influence+in+the+Arctic+New+Great+Game+North+Pole+Ozkan+Abbas" target="_blank">
+                        Russia's Expanding Influence in the Arctic: A Comprehensive Analysis of the New Great Game in the North Pole
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Ozkan, G., &amp; Abbas, S. R. — <em>Journal of International Relations and Political Science Studies</em>, Vol. 7, No. 1, pp. 1–27 (2024)
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Impact+of+External+Debt+Population+Growth+Inflation+Unemployment+Abbas+Munir" target="_blank">
+                        The Impact of External Debt, Population Growth and Inflation on Unemployment: Evidence from Developing Countries
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Abbas, S. G., Abbas, S. R., &amp; Munir, A. — <em>Economics Business and Organization Research</em>, Vol. 6, No. 1, pp. 1–14 (2024)
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Russia+Eurasian+Union+Dream+Multipolar+World+Order+Abbas" target="_blank">
+                        Russia’s Eurasian Union Dream: A Way Forward Towards Multipolar World Order
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Abbas, S. R. — <em>Journal of Global Faultlines</em>, Vol. 9, No. 1, pp. 33–43 (2022) <span class="badge">Scopus</span>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://scholar.google.com/scholar?q=Russian+Geopolitics+and+Eurasia+Analytical+Study+Russia+Role+Eurasian+Integration+Abbas" target="_blank">
+                        Russian Geopolitics and Eurasia: An Analytical Study of Russia's Role in the Eurasian Integration
+                    </a>
+                </div>
+                <div class="pub-meta">
+                    Abbas, S. R. — <em>World Affairs: The Journal of International Issues</em>, Vol. 24, No. 2, pp. 90–105 (2020)
+                </div>
+            </div>
+        </div>
+
+        <!-- CURRICULUM VITAE TAB -->
+        <div id="cv" class="tab-section">
+            <h2 class="section-heading">Curriculum Vitae</h2>
+
+            <h3 class="sub-heading">Education</h3>
+            <div class="cv-row">
+                <div class="cv-header">
+                    <span>PhD Candidate in Civilizational Studies (MEDİT)</span>
+                    <span class="cv-date">2024 – Present</span>
+                </div>
+                <div class="cv-sub">Ibn Haldun University — Istanbul, Türkiye</div>
+            </div>
+
+            <div class="cv-row">
+                <div class="cv-header">
+                    <span>Master of Arts in International Relations</span>
+                    <span class="cv-date">2022 – 2024</span>
+                </div>
+                <div class="cv-sub">
+                    Institute of Social Sciences, Erciyes University — Kayseri, Türkiye<br>
+                    <strong>GPA:</strong> 3.95 / 4.00 (Department Distinction; CGPA 3.72)<br>
+                    <strong>Thesis:</strong> <em>Geopolitics of the New Great Game – A Comparative Study of Great Powers' Pivot Towards Central Asia</em>
+                </div>
+            </div>
+
+            <div class="cv-row">
+                <div class="cv-header">
+                    <span>Bachelor of Science in Political Science &amp; International Relations</span>
+                    <span class="cv-date">2015 – 2019</span>
+                </div>
+                <div class="cv-sub">
+                    Faculty of Social Sciences, International Islamic University — Islamabad, Pakistan<br>
+                    <strong>GPA:</strong> 3.89 / 4.00 (Gold Medalist, Highest Achiever)
+                </div>
+            </div>
+
+            <h3 class="sub-heading">Professional Experience</h3>
+            <div class="cv-row">
+                <div class="cv-header">
+                    <span>Expert Analyst</span>
+                    <span class="cv-date">2025 – Present</span>
+                </div>
+                <div class="cv-sub">Association Sovereignty — Brazil</div>
+            </div>
+
+            <div class="cv-row">
+                <div class="cv-header">
+                    <span>Program Coordinator</span>
+                    <span class="cv-date">2024 – Present</span>
+                </div>
+                <div class="cv-sub">Global Peace Summit — Pakistan</div>
+            </div>
+
+            <div class="cv-row">
+                <div class="cv-header">
+                    <span>Peer Reviewer</span>
+                    <span class="cv-date">2023 – Present</span>
+                </div>
+                <div class="cv-sub">European Journal of Geopolitics</div>
+            </div>
+
+            <div class="cv-row">
+                <div class="cv-header">
+                    <span>Research Assistant</span>
+                    <span class="cv-date">2020 – 2021</span>
+                </div>
+                <div class="cv-sub">Iqbal Research Dialogue, International Islamic University — Islamabad, Pakistan</div>
+            </div>
+
+            <h3 class="sub-heading">Honors, Scholarships &amp; Certifications</h3>
+            <ul class="classic-list">
+                <li><strong>Online Certification Course:</strong> <em>AI, Justice, and the Rule of Law</em> — Saïd Business School, University of Oxford (2026 – Present)</li>
+                <li><strong>Certificate in Specialised Training Programme on Muslim Minority Studies (16 weeks / 48 hrs):</strong> Migration Research Foundation (GAV Akademi), Türkiye (Oct 2025 – Apr 2026)</li>
+                <li><strong>Department Distinction:</strong> Highest Achiever, Master's Degree in International Relations, Erciyes University (2024)</li>
+                <li><strong>Turkish Government Scholarship (YTB / TBBS):</strong> Full Master's funding (2021 – 2024)</li>
+                <li><strong>Gold Medalist:</strong> Highest Achiever, Faculty of Social Sciences, International Islamic University, Islamabad (2019)</li>
+                <li><strong>Certificate in Russia–European Relations:</strong> University of Tartu, Tallinn, Estonia (2019)</li>
+            </ul>
+
+            <h3 class="sub-heading">Skills &amp; Languages</h3>
+            <ul class="classic-list">
+                <li><strong>Quantitative &amp; Statistical Analysis:</strong> SPSS &amp; Stata (Advanced), Python &amp; MATLAB (Beginner)</li>
+                <li><strong>Languages:</strong> English (C2), Turkish (C1), Hindi (C1), Urdu (C1), Arabic (A2)</li>
+            </ul>
+        </div>
+
+        <!-- CONTACT TAB -->
+        <div id="contact" class="tab-section">
+            <h2 class="section-heading">Contact &amp; Academic Profiles</h2>
+            <p>For academic inquiries, research collaborations, or speaking invitations, please reach out via email or connect through the scholarly platforms below:</p>
+            <ul class="classic-list" style="font-size: 1.02rem; line-height: 2;">
+                <li><strong>Email:</strong> <a href="mailto:abbas.hashmi63@gmail.com">abbas.hashmi63@gmail.com</a></li>
+                <li><strong>Phone:</strong> <a href="tel:+905528616438">+90 552 861 6438</a></li>
+                <li><strong>Affiliation:</strong> Alliance of Civilizations Institute (MEDİT), Ibn Haldun University, Istanbul, Türkiye</li>
+                <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-9242-5131" target="_blank">0000-0002-9242-5131</a></li>
+                <li><strong>Scopus Author ID:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=59420346400" target="_blank">59420346400</a></li>
+                <li><strong>Web of Science ResearcherID:</strong> GWM-5854-2022</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shahzada-rahim-6783a29a" target="_blank">linkedin.com/in/shahzada-rahim-6783a29a</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        &copy; 2026 Shahzada Rahim Abbas. All Rights Reserved.
+    </footer>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-section");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].classList.remove("active");
+        }
+        tablinks = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+</script>
 
 </body>
 </html>
