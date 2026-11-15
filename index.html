@@ -77,12 +77,12 @@
             background: none;
             border: none;
             font-family: 'Open Sans', sans-serif;
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
             color: var(--primary-blue);
-            padding: 16px 20px;
+            padding: 15px 16px;
             cursor: pointer;
             border-right: 1px solid #e2e6eb;
             transition: background-color 0.2s, color 0.2s;
@@ -96,7 +96,7 @@
             background-color: var(--bg-container);
             color: var(--accent-blue);
             border-top: 3px solid var(--accent-blue);
-            padding-top: 13px;
+            padding-top: 12px;
         }
 
         /* Main Content Area */
@@ -261,10 +261,52 @@
             font-weight: 600;
             text-decoration: none;
             border-radius: 3px;
+            margin-right: 8px;
+            margin-bottom: 6px;
         }
 
         .book-btn:hover {
             background-color: var(--accent-blue);
+        }
+
+        /* Upcoming Events Cards */
+        .event-card {
+            border: 1px solid var(--border-light);
+            background-color: #fbfcfd;
+            border-left: 5px solid var(--primary-blue);
+            padding: 24px 28px;
+            margin-bottom: 26px;
+        }
+
+        .event-date-badge {
+            display: inline-block;
+            background-color: #eef3f8;
+            color: var(--accent-blue);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 10px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        .event-title {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 1.22rem;
+            color: var(--primary-blue);
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+        }
+
+        .event-role {
+            font-size: 0.98rem;
+            color: var(--text-main);
+            margin-bottom: 14px;
+        }
+
+        .event-links {
+            margin-top: 12px;
         }
 
         /* Featured Op-Ed Visual Cards */
@@ -494,8 +536,8 @@
                 margin: 0 auto 15px auto;
             }
             .main-nav button {
-                padding: 10px 12px;
-                font-size: 0.8rem;
+                padding: 10px 11px;
+                font-size: 0.78rem;
             }
         }
     </style>
@@ -516,6 +558,7 @@
         <button class="tab-btn" onclick="openTab(event, 'articles')">Academic Articles</button>
         <button class="tab-btn" onclick="openTab(event, 'oped')">Op-Ed Articles</button>
         <button class="tab-btn" onclick="openTab(event, 'substack')">Substack</button>
+        <button class="tab-btn" onclick="openTab(event, 'upcoming')">Upcoming</button>
         <button class="tab-btn" onclick="openTab(event, 'media')">Media Appearances</button>
         <button class="tab-btn" onclick="openTab(event, 'cv')">Curriculum Vitae</button>
         <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
@@ -765,7 +808,7 @@
                             </a>
                         </h3>
                         <p class="oped-excerpt">
-                            The question is whether the West can afford two fronts if the United States and Europe decide to start a war with China[cite: 10].
+                            The question is whether the West can afford two fronts if the United States and Europe decide to start a war with China.
                         </p>
                         <a href="https://politicstoday.org/american-eagle-chinese-dragon-united-states-china/" target="_blank" class="oped-read-more">
                             Read Full Article <i class="fa-solid fa-arrow-right"></i>
@@ -786,7 +829,7 @@
                             </a>
                         </h3>
                         <p class="oped-excerpt">
-                            Examining non-linear conflicts, hybrid security paradigms, and the changing nature of modern state defense[cite: 7].
+                            Examining non-linear conflicts, hybrid security paradigms, and the changing nature of modern state defense.
                         </p>
                         <a href="https://www.jpost.com/opinion/new-generation-warfare-and-the-future-of-state-security-566421" target="_blank" class="oped-read-more">
                             Read Full Article <i class="fa-solid fa-arrow-right"></i>
@@ -807,7 +850,7 @@
                             </a>
                         </h3>
                         <p class="oped-excerpt">
-                            The offensive Russian foreign policy approach towards Europe is based on Russia's sense of geographic insecurity[cite: 8].
+                            The offensive Russian foreign policy approach towards Europe is based on Russia's sense of geographic insecurity.
                         </p>
                         <a href="https://neweasterneurope.eu/2019/04/09/russias-obsession-or-geographic-trap/" target="_blank" class="oped-read-more">
                             Read Full Article <i class="fa-solid fa-arrow-right"></i>
@@ -828,7 +871,7 @@
                             </a>
                         </h3>
                         <p class="oped-excerpt">
-                            A legal and geopolitical analysis of the Caspian basin convention among its five littoral states[cite: 9].
+                            A legal and geopolitical analysis of the Caspian basin convention among its five littoral states.
                         </p>
                         <a href="https://courtingthelaw.com/2018/10/18/commentary/has-the-caspian-seas-legal-status-been-resolved/" target="_blank" class="oped-read-more">
                             Read Full Article <i class="fa-solid fa-arrow-right"></i>
@@ -857,6 +900,44 @@
                 <a href="https://shahzadarahim.substack.com/" class="book-btn" target="_blank" style="padding: 10px 22px; font-size: 0.95rem; margin-top: 10px;">
                     <i class="fa-solid fa-newspaper"></i> Visit My Substack
                 </a>
+            </div>
+        </div>
+
+        <!-- UPCOMING PRESENTATIONS & APPEARANCES TAB -->
+        <div id="upcoming" class="tab-section">
+            <h2 class="section-heading">Upcoming Presentations &amp; Appearances</h2>
+            <p>Scheduled international conferences, symposium papers, and panel moderations:</p>
+
+            <!-- Event 1: December 2026 St. Petersburg -->
+            <div class="event-card">
+                <div class="event-date-badge"><i class="fa-regular fa-calendar"></i> 2–4 December 2026 &bull; St. Petersburg</div>
+                <h3 class="event-title">
+                    International Symposium: “Science Diplomacy in a Multipolar World: Science. Dialogue. Trust”
+                </h3>
+                <div class="event-role">
+                    <strong>Role:</strong> Speaker / Paper Presenter<br>
+                    <strong>Presentation Topic:</strong> <em>“Clash of Civilizations or Convergence? Revisiting Huntington's Clash Thesis in the Age of Multipolarity”</em>
+                </div>
+                <div class="event-links">
+                    <a href="https://unescofutures.hse.ru/en/announcements/1172091572.html" class="book-btn" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i> HSE UNESCO Futures Announcement
+                    </a>
+                    <a href="https://craicentre.com/event/index.php?id=101484798&utm_source=ACA&utm_medium=organic" class="book-btn" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i> CRAI Centre Event Page
+                    </a>
+                </div>
+            </div>
+
+            <!-- Event 2: February 2027 Panel Moderation -->
+            <div class="event-card">
+                <div class="event-date-badge"><i class="fa-regular fa-calendar"></i> February 2027</div>
+                <h3 class="event-title">
+                    Panel Discussion on Civilizational States
+                </h3>
+                <div class="event-role">
+                    <strong>Role:</strong> Panel Moderator<br>
+                    <strong>Organizer:</strong> International Eurasia Movement
+                </div>
             </div>
         </div>
 
