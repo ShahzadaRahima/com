@@ -17,12 +17,12 @@
     <style>
         :root {
             --bg-color: #ffffff;
-            --text-color: #2c3e50;
+            --text-color: #2b2b2b;
             --text-muted: #555555;
-            --accent-color: #1a5276;
-            --accent-hover: #154360;
-            --border-color: #eaeaea;
-            --badge-bg: #f8fafc;
+            --accent-color: #1b365d;
+            --accent-hover: #0f233f;
+            --border-color: #e5e5e5;
+            --badge-bg: #f4f6f8;
             --max-width: 1050px;
         }
 
@@ -34,7 +34,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.65;
+            line-height: 1.7;
             margin: 0;
             padding: 0;
         }
@@ -50,30 +50,30 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 18px;
+            margin-bottom: 45px;
         }
 
         .site-title-area h1 {
             font-family: 'Lora', serif;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             margin: 0 0 2px 0;
             color: #111;
             font-weight: 600;
         }
 
         .site-subtitle {
-            font-size: 0.78rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
-            letter-spacing: 0.5px;
+            letter-spacing: 0.6px;
             text-transform: uppercase;
         }
 
         .nav-tabs {
             display: flex;
             flex-wrap: wrap;
-            gap: 18px;
+            gap: 20px;
             font-size: 0.92rem;
         }
 
@@ -86,15 +86,15 @@
         }
 
         .nav-tabs a:hover, .nav-tabs a.active {
-            color: #111;
-            border-bottom: 2px solid #111;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
         }
 
         /* Main Two-Column Layout */
         .main-layout {
             display: grid;
             grid-template-columns: 240px 1fr;
-            gap: 55px;
+            gap: 60px;
             align-items: start;
         }
 
@@ -110,10 +110,10 @@
         .profile-photo {
             width: 100%;
             height: auto;
-            border-radius: 4px;
+            border-radius: 3px;
             object-fit: cover;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            background-color: #f0f0f0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
         }
 
         .sidebar-info h2 {
@@ -155,38 +155,39 @@
 
         /* Content Area */
         .content-area section {
-            margin-bottom: 45px;
+            margin-bottom: 50px;
         }
 
         .content-area h2 {
             font-family: 'Lora', serif;
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             margin-top: 0;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
             color: #111;
             font-weight: 500;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
         }
 
         .content-area h3 {
             font-family: 'Lora', serif;
-            font-size: 1.25rem;
-            margin-top: 0;
+            font-size: 1.3rem;
+            margin-top: 30px;
             margin-bottom: 15px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 5px;
             color: #111;
             font-weight: 600;
         }
 
         .content-area p {
-            font-size: 0.96rem;
-            margin-bottom: 15px;
+            font-size: 0.98rem;
+            margin-bottom: 16px;
             color: #333;
+            text-align: justify;
         }
 
         /* CV Entries */
         .cv-entry {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .cv-entry-header {
@@ -199,32 +200,32 @@
 
         .cv-title {
             font-weight: 600;
-            font-size: 0.96rem;
+            font-size: 0.98rem;
             color: #111;
         }
 
         .cv-date {
-            font-size: 0.84rem;
+            font-size: 0.85rem;
             color: var(--accent-color);
             font-weight: 500;
         }
 
         .cv-org {
-            font-size: 0.9rem;
+            font-size: 0.91rem;
             color: var(--text-muted);
             margin-top: 2px;
         }
 
         .cv-details {
-            font-size: 0.88rem;
+            font-size: 0.89rem;
             color: #444;
             margin-top: 4px;
         }
 
         /* Research Items */
         .research-item {
-            margin-bottom: 12px;
-            font-size: 0.93rem;
+            margin-bottom: 14px;
+            font-size: 0.95rem;
         }
 
         .research-item strong {
@@ -234,11 +235,13 @@
         /* Publications */
         .pub-year {
             font-family: 'Lora', serif;
-            font-size: 1.08rem;
+            font-size: 1.15rem;
             font-weight: 600;
             color: var(--accent-color);
-            margin-top: 20px;
-            margin-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 4px;
         }
 
         .pub-list {
@@ -248,22 +251,30 @@
         }
 
         .pub-item {
-            margin-bottom: 15px;
-            font-size: 0.91rem;
+            margin-bottom: 18px;
+            font-size: 0.93rem;
         }
 
-        .pub-title {
+        .pub-title a {
             font-weight: 600;
-            color: #111;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .pub-title a:hover {
+            text-decoration: underline;
+            color: var(--accent-hover);
         }
 
         .pub-authors {
             color: var(--text-muted);
+            margin-top: 2px;
         }
 
         .pub-venue {
             font-style: italic;
             color: #555;
+            margin-top: 2px;
         }
 
         .index-tag {
@@ -273,30 +284,30 @@
             font-weight: 600;
             background: var(--badge-bg);
             color: var(--accent-color);
-            padding: 1px 5px;
+            padding: 1px 6px;
             border-radius: 3px;
-            margin-left: 5px;
+            margin-left: 6px;
             border: 1px solid var(--border-color);
         }
 
         .clean-list {
             padding-left: 18px;
             margin: 0;
-            font-size: 0.92rem;
+            font-size: 0.93rem;
         }
 
         .clean-list li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             color: #333;
         }
 
         footer {
             text-align: center;
-            font-size: 0.83rem;
+            font-size: 0.84rem;
             color: #718096;
             border-top: 1px solid var(--border-color);
-            padding-top: 22px;
-            margin-top: 55px;
+            padding-top: 25px;
+            margin-top: 60px;
         }
 
         /* Responsive Mobile Layout */
@@ -329,7 +340,7 @@
         <header class="top-header">
             <div class="site-title-area">
                 <h1>Shahzada Rahim Abbas</h1>
-                <div class="site-subtitle">International Relations, Geopolitics & Civilizational Studies</div>
+                <div class="site-subtitle">International Relations & Geopolitics Theorist</div>
             </div>
             <nav class="nav-tabs">
                 <a href="#overview" class="active">Overview</a>
@@ -393,7 +404,7 @@
 
                 <!-- Education Section -->
                 <section id="education">
-                    <h3>Education</h3>
+                    <h2>Education</h2>
                     
                     <div class="cv-entry">
                         <div class="cv-entry-header">
@@ -429,7 +440,7 @@
 
                 <!-- Professional Experience Section -->
                 <section id="experience">
-                    <h3>Professional Experience</h3>
+                    <h2>Professional Experience</h2>
 
                     <div class="cv-entry">
                         <div class="cv-entry-header">
@@ -466,100 +477,129 @@
 
                 <!-- Publications Section -->
                 <section id="publications">
+                    <h2>Publications & Research</h2>
+                    
                     <h3>Books & Monographs</h3>
                     <ul class="pub-list">
                         <li class="pub-item">
-                            <div class="pub-title">Más allá de la civilización y la historia: Que ha marcado un punto de inflexión sin precedentes en la historia de la filosofía (Spanish Edition)</div>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Más allá de la civilización y la historia: Que ha marcado un punto de inflexión sin precedentes en la historia de la filosofía (Spanish Edition)</a>
+                            </div>
                             <div class="pub-authors">Shahzada Rahim</div>
                             <div class="pub-venue">Ediciones Fides (2023)</div>
                         </li>
-                        <li class="pub-item">
-                            <div class="pub-title">Beyond Civilization and History: A Philosophical Study of Modernist and Post-Modernist Perspectives on History</div>
+                        <li class="pub-item" style="margin-top: 15px;">
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Beyond Civilization and History: A Philosophical Study of Modernist and Post-Modernist Perspectives on History</a>
+                            </div>
                             <div class="pub-authors">Shahzada Rahim Abbas</div>
                             <div class="pub-venue">Monograph (2020 / 2022) | ISBN: 9798691822254</div>
                         </li>
                     </ul>
 
-                    <h3 style="margin-top: 32px;">Peer-Reviewed Journal Articles</h3>
+                    <h3 style="margin-top: 35px;">Peer-Reviewed Journal Articles</h3>
 
                     <div class="pub-year">2026</div>
                     <ul class="pub-list">
                         <li class="pub-item">
-                            <span class="pub-title">Greening the Energy Mix: The Role of Environmental Policies in Reducing Fossil Fuel Consumption in EU-23 Countries</span><br>
-                            <span class="pub-authors">Belet, N. H., Abbas, S. G., & Abbas, S. R.</span><br>
-                            <span class="pub-venue">The Japanese Political Economy (Taylor & Francis), Vol. 2, No. 2, pp. 1–19 (2026)</span>
-                            <span class="index-tag">Scopus / WoS</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Greening the Energy Mix: The Role of Environmental Policies in Reducing Fossil Fuel Consumption in EU-23 Countries</a>
+                            </div>
+                            <div class="pub-authors">Belet, N. H., Abbas, S. G., & Abbas, S. R.</div>
+                            <div class="pub-venue">The Japanese Political Economy (Taylor & Francis), Vol. 2, No. 2, pp. 1–19 (2026) <span class="index-tag">Scopus / WoS</span></div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">BRI and Infrastructure Development: Impact on the Economic Growth of Lower-Income African Countries</span><br>
-                            <span class="pub-authors">Abbas, S. G., Abbas, S. R., & Belet, N. H.</span><br>
-                            <span class="pub-venue">The Indian Economic Journal (Sage), Vol. 74, No. 3 (2026)</span>
-                            <span class="index-tag">Scopus</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">BRI and Infrastructure Development: Impact on the Economic Growth of Lower-Income African Countries</a>
+                            </div>
+                            <div class="pub-authors">Abbas, S. G., Abbas, S. R., & Belet, N. H.</div>
+                            <div class="pub-venue">The Indian Economic Journal (Sage), Vol. 74, No. 3 (2026) <span class="index-tag">Scopus</span></div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">Can Europe Stay Productive? Macroeconomic and Demographic Pressures on Labor Productivity</span><br>
-                            <span class="pub-authors">Belet, N. H., Abbas, S. G., & Abbas, S. R.</span><br>
-                            <span class="pub-venue">Population and Economics, Vol. 10, No. 1, pp. 164–182 (2026)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Can Europe Stay Productive? Macroeconomic and Demographic Pressures on Labor Productivity</a>
+                            </div>
+                            <div class="pub-authors">Belet, N. H., Abbas, S. G., & Abbas, S. R.</div>
+                            <div class="pub-venue">Population and Economics, Vol. 10, No. 1, pp. 164–182 (2026)</div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">Deconstructing Eurocentric Narratives: A Critical Analysis of Civilization through the Works of Guizot, Gobineau, and Buckle</span><br>
-                            <span class="pub-authors">Abbas, S. R.</span><br>
-                            <span class="pub-venue">Journal of Islamic Thought and Civilization, Vol. 16, No. 1, pp. 18–36 (2026)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Deconstructing Eurocentric Narratives: A Critical Analysis of Civilization through the Works of Guizot, Gobineau, and Buckle</a>
+                            </div>
+                            <div class="pub-authors">Abbas, S. R.</div>
+                            <div class="pub-venue">Journal of Islamic Thought and Civilization, Vol. 16, No. 1, pp. 18–36 (2026)</div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">The Philosophy of Law in Enforcing Criminal Liability for Nominee Accounts: A Comparative Study of Indonesia and Pakistan</span><br>
-                            <span class="pub-authors">Ginting, B. R., Suarda, I. G. W., Rato, D., Anggono, B. D., & Abbas, S. R.</span><br>
-                            <span class="pub-venue">PAMALI: Pattimura Magister Law Review, Vol. 6, No. 1, pp. 134–143 (2026)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">The Philosophy of Law in Enforcing Criminal Liability for Nominee Accounts: A Comparative Study of Indonesia and Pakistan</a>
+                            </div>
+                            <div class="pub-authors">Ginting, B. R., Suarda, I. G. W., Rato, D., Anggono, B. D., & Abbas, S. R.</div>
+                            <div class="pub-venue">PAMALI: Pattimura Magister Law Review, Vol. 6, No. 1, pp. 134–143 (2026)</div>
                         </li>
                     </ul>
 
                     <div class="pub-year">2025</div>
                     <ul class="pub-list">
                         <li class="pub-item">
-                            <span class="pub-title">The Emergence of Hybrid Warfare and the Future of Global Security: A Comparative Study of Russian and NATO's Hybrid Infrastructure in Ukraine</span><br>
-                            <span class="pub-authors">Abbas, S. R.</span><br>
-                            <span class="pub-venue">The Rest: Journal of Politics and Development, Vol. 15, No. 2, pp. 198–212 (2025)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">The Emergence of Hybrid Warfare and the Future of Global Security: A Comparative Study of Russian and NATO's Hybrid Infrastructure in Ukraine</a>
+                            </div>
+                            <div class="pub-authors">Abbas, S. R.</div>
+                            <div class="pub-venue">The Rest: Journal of Politics and Development, Vol. 15, No. 2, pp. 198–212 (2025)</div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">Is Colonization Possible During the Encounter Between Two Civilizations?</span><br>
-                            <span class="pub-authors">Abbas, S. R.</span><br>
-                            <span class="pub-venue">Policy Perspectives, Vol. 22, No. 2, pp. 33–52 (2025)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Is Colonization Possible During the Encounter Between Two Civilizations?</a>
+                            </div>
+                            <div class="pub-authors">Abbas, S. R.</div>
+                            <div class="pub-venue">Policy Perspectives, Vol. 22, No. 2, pp. 33–52 (2025)</div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">Freshwater Scarcity and Conflict in Sub-Saharan Africa and Asia</span><br>
-                            <span class="pub-authors">Abbas, S. R., & Obedgiu, S.</span><br>
-                            <span class="pub-venue">Cavendish Journal of Social Sciences and Management (CJSSM), Vol. 3, No. 1, pp. 1–19 (2025)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Freshwater Scarcity and Conflict in Sub-Saharan Africa and Asia</a>
+                            </div>
+                            <div class="pub-authors">Abbas, S. R., & Obedgiu, S.</div>
+                            <div class="pub-venue">Cavendish Journal of Social Sciences and Management (CJSSM), Vol. 3, No. 1, pp. 1–19 (2025)</div>
                         </li>
                     </ul>
 
                     <div class="pub-year">2024 & Earlier</div>
                     <ul class="pub-list">
                         <li class="pub-item">
-                            <span class="pub-title">Russia's Expanding Influence in the Arctic: A Comprehensive Analysis of the New Great Game in the North Pole</span><br>
-                            <span class="pub-authors">Ozkan, G., & Abbas, S. R.</span><br>
-                            <span class="pub-venue">Journal of International Relations and Political Science Studies, Vol. 7, No. 1, pp. 1–27 (2024)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Russia's Expanding Influence in the Arctic: A Comprehensive Analysis of the New Great Game in the North Pole</a>
+                            </div>
+                            <div class="pub-authors">Ozkan, G., & Abbas, S. R.</div>
+                            <div class="pub-venue">Journal of International Relations and Political Science Studies, Vol. 7, No. 1, pp. 1–27 (2024)</div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">The Impact of External Debt, Population Growth and Inflation on Unemployment: Evidence from Developing Countries</span><br>
-                            <span class="pub-authors">Abbas, S. G., Abbas, S. R., & Munir, A.</span><br>
-                            <span class="pub-venue">Economics Business and Organization Research, Vol. 6, No. 1, pp. 1–14 (2024)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">The Impact of External Debt, Population Growth and Inflation on Unemployment: Evidence from Developing Countries</a>
+                            </div>
+                            <div class="pub-authors">Abbas, S. G., Abbas, S. R., & Munir, A.</div>
+                            <div class="pub-venue">Economics Business and Organization Research, Vol. 6, No. 1, pp. 1–14 (2024)</div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">Russia’s Eurasian Union Dream: A Way Forward Towards Multipolar World Order</span><br>
-                            <span class="pub-authors">Abbas, S. R.</span><br>
-                            <span class="pub-venue">Journal of Global Faultlines, Vol. 9, No. 1, pp. 33–43 (2022)</span>
-                            <span class="index-tag">Scopus</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Russia’s Eurasian Union Dream: A Way Forward Towards Multipolar World Order</a>
+                            </div>
+                            <div class="pub-authors">Abbas, S. R.</div>
+                            <div class="pub-venue">Journal of Global Faultlines, Vol. 9, No. 1, pp. 33–43 (2022) <span class="index-tag">Scopus</span></div>
                         </li>
                         <li class="pub-item">
-                            <span class="pub-title">Russian Geopolitics and Eurasia: An Analytical Study of Russia's Role in the Eurasian Integration</span><br>
-                            <span class="pub-authors">Abbas, S. R.</span><br>
-                            <span class="pub-venue">World Affairs: The Journal of International Issues, Vol. 24, No. 2, pp. 90–105 (2020)</span>
+                            <div class="pub-title">
+                                <a href="https://scholar.google.com" target="_blank">Russian Geopolitics and Eurasia: An Analytical Study of Russia's Role in the Eurasian Integration</a>
+                            </div>
+                            <div class="pub-authors">Abbas, S. R.</div>
+                            <div class="pub-venue">World Affairs: The Journal of International Issues, Vol. 24, No. 2, pp. 90–105 (2020)</div>
                         </li>
                     </ul>
                 </section>
 
                 <!-- Skills & Honors Section -->
                 <section id="skills">
+                    <h2>Skills & Honors</h2>
+                    
                     <h3>Skills & Languages</h3>
                     <ul class="clean-list" style="margin-bottom: 25px;">
                         <li><strong>Quantitative & Statistical Analysis:</strong> SPSS & Stata (Advanced), Python & MATLAB (Beginner)</li>
