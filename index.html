@@ -41,7 +41,7 @@
             box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
         }
 
-        /* Top Header Banner (Sachs-style clean identity) */
+        /* Top Header Banner */
         .site-banner {
             background-color: var(--primary-blue);
             color: #ffffff;
@@ -209,7 +209,7 @@
             text-align: justify;
         }
 
-        /* Books & Publication Styling */
+        /* Books Styling */
         .book-card {
             display: grid;
             grid-template-columns: 140px 1fr;
@@ -267,6 +267,106 @@
             background-color: var(--accent-blue);
         }
 
+        /* Featured Op-Ed Visual Cards (Sachs-style Editorial Grid) */
+        .oped-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .oped-card {
+            border: 1px solid var(--border-light);
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .oped-card:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .oped-thumb-link {
+            display: block;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background-color: #eef1f5;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .oped-thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .oped-card:hover .oped-thumb {
+            transform: scale(1.03);
+        }
+
+        .oped-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .oped-outlet {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--accent-blue);
+            margin-bottom: 6px;
+        }
+
+        .oped-title {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 10px 0;
+        }
+
+        .oped-title a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .oped-title a:hover {
+            text-decoration: underline;
+        }
+
+        .oped-excerpt {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 16px;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .oped-read-more {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-blue);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .oped-read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Academic Publications Styling */
         .pub-item {
             margin-bottom: 20px;
             padding-bottom: 16px;
@@ -386,7 +486,7 @@
             .content-body {
                 padding: 25px 20px;
             }
-            .home-grid, .book-card {
+            .home-grid, .book-card, .oped-grid {
                 grid-template-columns: 1fr;
             }
             .portrait-box, .book-cover {
@@ -403,7 +503,7 @@
 <body>
 
 <div class="page-wrapper">
-    <!-- Sachs-Style Top Banner -->
+    <!-- Top Banner -->
     <header class="site-banner">
         <h1>Shahzada Rahim Abbas</h1>
         <p class="tagline">International Relations, Geopolitics &amp; Civilizational Studies</p>
@@ -646,49 +746,99 @@
             </div>
         </div>
 
-        <!-- OP-ED ARTICLES TAB -->
+        <!-- OP-ED ARTICLES TAB (WITH PICTURES) -->
         <div id="oped" class="tab-section">
-            <h2 class="section-heading">Op-Ed Articles &amp; Commentary</h2>
-            <p>Featured commentaries and geopolitical analyses published across international platforms:</p>
+            <h2 class="section-heading">Featured Op-Ed Articles &amp; Commentary</h2>
+            <p>Selected commentaries, strategic essays, and policy analyses published across international outlets:</p>
 
-            <div class="pub-item">
-                <div class="pub-title">
-                    <a href="https://politicstoday.org/american-eagle-chinese-dragon-united-states-china/" target="_blank">
-                        American Eagle and Chinese Dragon: United States and China
+            <div class="oped-grid">
+                <!-- Card 1: Politics Today -->
+                <article class="oped-card">
+                    <a href="https://politicstoday.org/american-eagle-chinese-dragon-united-states-china/" target="_blank" class="oped-thumb-link">
+                        <img src="oped-china-us.jpg" alt="Is the American Eagle Ready to Fight the Chinese Dragon?" class="oped-thumb">
                     </a>
-                </div>
-                <div class="pub-meta">Published in <em>Politics Today</em></div>
+                    <div class="oped-body">
+                        <div class="oped-outlet">Politics Today &bull; March 8, 2023</div>
+                        <h3 class="oped-title">
+                            <a href="https://politicstoday.org/american-eagle-chinese-dragon-united-states-china/" target="_blank">
+                                Is the American Eagle Ready to Fight the Chinese Dragon?
+                            </a>
+                        </h3>
+                        <p class="oped-excerpt">
+                            The question is whether the West can afford two fronts if the United States and Europe decide to start a war with China[cite: 10].
+                        </p>
+                        <a href="https://politicstoday.org/american-eagle-chinese-dragon-united-states-china/" target="_blank" class="oped-read-more">
+                            Read Full Article <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 2: The Jerusalem Post -->
+                <article class="oped-card">
+                    <a href="https://www.jpost.com/opinion/new-generation-warfare-and-the-future-of-state-security-566421" target="_blank" class="oped-thumb-link">
+                        <img src="oped-warfare.jpg" alt="‘New-generation warfare’ and the future of state security" class="oped-thumb">
+                    </a>
+                    <div class="oped-body">
+                        <div class="oped-outlet">The Jerusalem Post &bull; Opinion</div>
+                        <h3 class="oped-title">
+                            <a href="https://www.jpost.com/opinion/new-generation-warfare-and-the-future-of-state-security-566421" target="_blank">
+                                ‘New-generation warfare’ and the future of state security
+                            </a>
+                        </h3>
+                        <p class="oped-excerpt">
+                            Examining non-linear conflicts, hybrid security paradigms, and the changing nature of modern state defense[cite: 7].
+                        </p>
+                        <a href="https://www.jpost.com/opinion/new-generation-warfare-and-the-future-of-state-security-566421" target="_blank" class="oped-read-more">
+                            Read Full Article <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3: New Eastern Europe -->
+                <article class="oped-card">
+                    <a href="https://neweasterneurope.eu/2019/04/09/russias-obsession-or-geographic-trap/" target="_blank" class="oped-thumb-link">
+                        <img src="oped-russia.jpg" alt="Russia’s obsession or geographic trap" class="oped-thumb">
+                    </a>
+                    <div class="oped-body">
+                        <div class="oped-outlet">New Eastern Europe &bull; April 9, 2019</div>
+                        <h3 class="oped-title">
+                            <a href="https://neweasterneurope.eu/2019/04/09/russias-obsession-or-geographic-trap/" target="_blank">
+                                Russia’s obsession or geographic trap
+                            </a>
+                        </h3>
+                        <p class="oped-excerpt">
+                            The offensive Russian foreign policy approach towards Europe is based on Russia's sense of geographic insecurity[cite: 8].
+                        </p>
+                        <a href="https://neweasterneurope.eu/2019/04/09/russias-obsession-or-geographic-trap/" target="_blank" class="oped-read-more">
+                            Read Full Article <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 4: Courting The Law -->
+                <article class="oped-card">
+                    <a href="https://courtingthelaw.com/2018/10/18/commentary/has-the-caspian-seas-legal-status-been-resolved/" target="_blank" class="oped-thumb-link">
+                        <img src="oped-caspian.jpg" alt="Has the Caspian Sea’s Legal Status Been Resolved?" class="oped-thumb">
+                    </a>
+                    <div class="oped-body">
+                        <div class="oped-outlet">Courting The Law &bull; October 18, 2018</div>
+                        <h3 class="oped-title">
+                            <a href="https://courtingthelaw.com/2018/10/18/commentary/has-the-caspian-seas-legal-status-been-resolved/" target="_blank">
+                                Has the Caspian Sea’s Legal Status Been Resolved?
+                            </a>
+                        </h3>
+                        <p class="oped-excerpt">
+                            A legal and geopolitical analysis of the Caspian basin convention among its five littoral states[cite: 9].
+                        </p>
+                        <a href="https://courtingthelaw.com/2018/10/18/commentary/has-the-caspian-seas-legal-status-been-resolved/" target="_blank" class="oped-read-more">
+                            Read Full Article <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
             </div>
 
-            <div class="pub-item">
-                <div class="pub-title">
-                    <a href="https://www.jpost.com/opinion/new-generation-warfare-and-the-future-of-state-security-566421" target="_blank">
-                        New-generation warfare and the future of state security
-                    </a>
-                </div>
-                <div class="pub-meta">Published in <em>The Jerusalem Post</em></div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">
-                    <a href="https://neweasterneurope.eu/2019/04/09/russias-obsession-or-geographic-trap/" target="_blank">
-                        Russia’s obsession or geographic trap?
-                    </a>
-                </div>
-                <div class="pub-meta">Published in <em>New Eastern Europe</em></div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">
-                    <a href="https://courtingthelaw.com/2018/10/18/commentary/has-the-caspian-seas-legal-status-been-resolved/" target="_blank">
-                        Has the Caspian Sea’s Legal Status Been Resolved?
-                    </a>
-                </div>
-                <div class="pub-meta">Published in <em>Courting The Law</em></div>
-            </div>
-
-            <h3 class="sub-heading" style="margin-top: 35px;">Author Profiles &amp; Archives</h3>
-            <ul class="classic-list" style="line-height: 1.8;">
+            <h3 class="sub-heading">Author Profiles &amp; Publication Archives</h3>
+            <ul class="classic-list" style="line-height: 1.9;">
                 <li><a href="https://politicstoday.org/author/shahzada-rahim/" target="_blank">Politics Today Author Archive</a></li>
                 <li><a href="https://independentaustralia.net/profile-on/shahzada-rahim,874" target="_blank">Independent Australia Profile</a></li>
                 <li><a href="https://www.geopolitika.ru/en/person/shahzada-rahim" target="_blank">Geopolitika.ru Author Profile</a></li>
