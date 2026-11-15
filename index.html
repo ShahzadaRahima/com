@@ -6,31 +6,31 @@
     <title>Shahzada Rahim Abbas | International Relations & Geopolitics</title>
     <meta name="description" content="Shahzada Rahim Abbas - PhD Candidate in Civilizational Studies & International Relations Researcher">
     
-    <!-- Classic Academic Serif & Sans Fonts -->
+    <!-- Clean Academic Typography & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
-            --bg-page: #f4f4f2;
+            --bg-page: #f7f7f5;
             --bg-container: #ffffff;
-            --primary-navy: #14284b;
-            --accent-gold: #8c6d46;
-            --text-main: #222222;
+            --primary-blue: #0b2545;
+            --accent-blue: #134074;
+            --text-main: #2b2b2b;
             --text-muted: #555555;
-            --border-light: #dddddd;
-            --max-width: 960px;
+            --border-light: #e0e0e0;
+            --max-width: 1000px;
         }
 
         body {
-            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             background-color: var(--bg-page);
             color: var(--text-main);
             margin: 0;
-            padding: 25px 15px 60px 15px;
-            line-height: 1.65;
+            padding: 30px 15px 70px 15px;
+            line-height: 1.7;
         }
 
         .page-wrapper {
@@ -38,75 +38,70 @@
             margin: 0 auto;
             background-color: var(--bg-container);
             border: 1px solid var(--border-light);
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
         }
 
-        /* Header Banner */
+        /* Top Header Banner (Sachs-style clean identity) */
         .site-banner {
-            background-color: var(--primary-navy);
+            background-color: var(--primary-blue);
             color: #ffffff;
-            text-align: center;
-            padding: 38px 20px 32px 20px;
-            border-bottom: 4px solid var(--accent-gold);
+            padding: 40px 50px 30px 50px;
+            border-bottom: 5px solid var(--accent-blue);
         }
 
         .site-banner h1 {
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 2.5rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin: 0 0 6px 0;
-            text-transform: uppercase;
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            letter-spacing: 0.5px;
         }
 
         .site-banner .tagline {
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 1.15rem;
-            font-style: italic;
-            color: #d9e1ec;
+            font-size: 1.1rem;
+            color: #d0dceb;
             margin: 0;
+            font-weight: 300;
         }
 
-        /* Horizontal Navigation Menu Bar */
+        /* Navigation Menu Bar */
         .main-nav {
-            background-color: #f9f9f8;
+            background-color: #f1f3f6;
             border-bottom: 1px solid var(--border-light);
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
         }
 
         .main-nav button {
             background: none;
             border: none;
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 0.95rem;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.88rem;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
-            color: var(--primary-navy);
-            padding: 14px 24px;
+            letter-spacing: 0.5px;
+            color: var(--primary-blue);
+            padding: 16px 20px;
             cursor: pointer;
-            border-right: 1px solid #ececec;
+            border-right: 1px solid #e2e6eb;
             transition: background-color 0.2s, color 0.2s;
         }
 
-        .main-nav button:first-child {
-            border-left: 1px solid #ececec;
-        }
-
         .main-nav button:hover {
-            background-color: #eef1f5;
+            background-color: #e2e7ef;
         }
 
         .main-nav button.active {
-            background-color: var(--primary-navy);
-            color: #ffffff;
+            background-color: var(--bg-container);
+            color: var(--accent-blue);
+            border-top: 3px solid var(--accent-blue);
+            padding-top: 13px;
         }
 
         /* Main Content Area */
         .content-body {
-            padding: 45px 50px;
+            padding: 50px;
         }
 
         .tab-section {
@@ -123,18 +118,18 @@
             to { opacity: 1; }
         }
 
-        /* Home Layout: Portrait Left + Bio Right */
+        /* Home Layout */
         .home-grid {
             display: grid;
             grid-template-columns: 260px 1fr;
-            gap: 40px;
+            gap: 45px;
             align-items: start;
         }
 
         .portrait-box {
             text-align: center;
             border: 1px solid var(--border-light);
-            padding: 10px;
+            padding: 12px;
             background: #fafafa;
         }
 
@@ -142,7 +137,7 @@
             width: 100%;
             height: auto;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .portrait-caption {
@@ -158,27 +153,26 @@
             display: flex;
             flex-direction: column;
             gap: 6px;
-            font-size: 0.86rem;
+            font-size: 0.85rem;
             text-align: left;
         }
 
         .academic-ids a {
-            color: var(--primary-navy);
+            color: var(--accent-blue);
             text-decoration: none;
         }
 
         .academic-ids a:hover {
             text-decoration: underline;
-            color: var(--accent-gold);
         }
 
         .cv-download-btn {
             display: block;
-            margin-top: 12px;
-            background-color: var(--primary-navy);
+            margin-top: 14px;
+            background-color: var(--primary-blue);
             color: #ffffff !important;
             text-align: center;
-            padding: 8px 10px;
+            padding: 9px 10px;
             font-weight: 600;
             text-decoration: none;
             border-radius: 3px;
@@ -186,28 +180,27 @@
         }
 
         .cv-download-btn:hover {
-            background-color: var(--accent-gold);
-            text-decoration: none !important;
+            background-color: var(--accent-blue);
         }
 
         h2.section-heading {
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 1.85rem;
-            color: var(--primary-navy);
-            border-bottom: 2px solid var(--primary-navy);
-            padding-bottom: 6px;
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 1.9rem;
+            color: var(--primary-blue);
+            border-bottom: 2px solid var(--primary-blue);
+            padding-bottom: 8px;
             margin-top: 0;
-            margin-bottom: 22px;
+            margin-bottom: 25px;
         }
 
         h3.sub-heading {
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 1.35rem;
-            color: var(--accent-gold);
-            margin-top: 28px;
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 1.3rem;
+            color: var(--accent-blue);
+            margin-top: 30px;
             margin-bottom: 12px;
             border-bottom: 1px solid var(--border-light);
-            padding-bottom: 4px;
+            padding-bottom: 5px;
         }
 
         p {
@@ -216,7 +209,7 @@
             text-align: justify;
         }
 
-        /* Books Styling */
+        /* Books & Publication Styling */
         .book-card {
             display: grid;
             grid-template-columns: 140px 1fr;
@@ -239,18 +232,17 @@
         }
 
         .book-details h3 {
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 1.25rem;
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 1.2rem;
             margin: 0 0 8px 0;
         }
 
         .book-details h3 a {
-            color: var(--primary-navy);
+            color: var(--primary-blue);
             text-decoration: none;
         }
 
         .book-details h3 a:hover {
-            color: var(--accent-gold);
             text-decoration: underline;
         }
 
@@ -262,7 +254,7 @@
 
         .book-btn {
             display: inline-block;
-            background-color: var(--primary-navy);
+            background-color: var(--primary-blue);
             color: #ffffff;
             padding: 6px 14px;
             font-size: 0.85rem;
@@ -272,10 +264,9 @@
         }
 
         .book-btn:hover {
-            background-color: var(--accent-gold);
+            background-color: var(--accent-blue);
         }
 
-        /* Publications & Articles Styling */
         .pub-item {
             margin-bottom: 20px;
             padding-bottom: 16px;
@@ -287,19 +278,18 @@
         }
 
         .pub-title {
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 1.18rem;
-            font-weight: 600;
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 700;
             margin-bottom: 4px;
         }
 
         .pub-title a {
-            color: var(--primary-navy);
+            color: var(--primary-blue);
             text-decoration: none;
         }
 
         .pub-title a:hover {
-            color: var(--accent-gold);
             text-decoration: underline;
         }
 
@@ -312,17 +302,47 @@
             display: inline-block;
             font-size: 0.75rem;
             font-weight: 600;
-            background: #eef1f5;
-            color: var(--primary-navy);
+            background: #eef3f8;
+            color: var(--accent-blue);
             padding: 1px 7px;
-            border: 1px solid #cfd8e3;
+            border: 1px solid #d0dceb;
             border-radius: 2px;
             margin-left: 6px;
         }
 
+        /* Media & Substack Grids */
+        .media-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .media-card {
+            border: 1px solid var(--border-light);
+            padding: 18px;
+            background: #fdfdfd;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .media-card h3 {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 1.1rem;
+            margin: 0 0 8px 0;
+        }
+
+        .media-card a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .media-card a:hover {
+            text-decoration: underline;
+        }
+
         /* CV Entries */
         .cv-row {
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
 
         .cv-header {
@@ -334,7 +354,7 @@
         }
 
         .cv-date {
-            color: var(--accent-gold);
+            color: var(--accent-blue);
             font-weight: 600;
         }
 
@@ -354,10 +374,10 @@
 
         /* Footer */
         .site-footer {
-            background-color: #f9f9f8;
+            background-color: #f1f3f6;
             border-top: 1px solid var(--border-light);
             text-align: center;
-            padding: 20px;
+            padding: 22px;
             font-size: 0.88rem;
             color: var(--text-muted);
         }
@@ -374,8 +394,8 @@
                 margin: 0 auto 15px auto;
             }
             .main-nav button {
-                padding: 10px 14px;
-                font-size: 0.85rem;
+                padding: 10px 12px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -383,22 +403,25 @@
 <body>
 
 <div class="page-wrapper">
-    <!-- Top Academic Banner -->
+    <!-- Sachs-Style Top Banner -->
     <header class="site-banner">
         <h1>Shahzada Rahim Abbas</h1>
         <p class="tagline">International Relations, Geopolitics &amp; Civilizational Studies</p>
     </header>
 
-    <!-- Horizontal Tab Bar -->
+    <!-- Navigation Menu Bar -->
     <nav class="main-nav">
         <button class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
         <button class="tab-btn" onclick="openTab(event, 'books')">Books</button>
-        <button class="tab-btn" onclick="openTab(event, 'articles')">Articles</button>
+        <button class="tab-btn" onclick="openTab(event, 'articles')">Academic Articles</button>
+        <button class="tab-btn" onclick="openTab(event, 'oped')">Op-Ed Articles</button>
+        <button class="tab-btn" onclick="openTab(event, 'substack')">Substack</button>
+        <button class="tab-btn" onclick="openTab(event, 'media')">Media Appearances</button>
         <button class="tab-btn" onclick="openTab(event, 'cv')">Curriculum Vitae</button>
         <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
     </nav>
 
-    <!-- Main Body Container -->
+    <!-- Main Content Container -->
     <main class="content-body">
 
         <!-- HOME TAB -->
@@ -421,12 +444,12 @@
                 </div>
 
                 <div>
-                    <h2 class="section-heading">Biography</h2>
+                    <h2 class="section-heading">Welcome</h2>
                     <p>
-                        Shahzada Rahim Abbas is a PhD Candidate in Civilizational Studies at the Alliance of Civilizations Institute (MEDİT), Ibn Haldun University in Istanbul, Türkiye. His scholarship bridges historical inquiry and contemporary structural analysis, examining how states, educational institutions, and economic systems evolve under shifting global power dynamics.
+                        Shahzada Rahim Abbas is an International Relations researcher and PhD Candidate in Civilizational Studies at the Alliance of Civilizations Institute (MEDİT), Ibn Haldun University in Istanbul, Türkiye. His scholarship bridges historical inquiry and contemporary structural analysis, examining how states, educational institutions, and economic systems evolve under shifting global power dynamics.
                     </p>
                     <p>
-                        Holding a Master of Arts in International Relations (GPA 3.95, Department Distinction) from Erciyes University and a Bachelor of Science (Gold Medalist) from International Islamic University, Islamabad, he focuses on great-power competition, Eurasian and Arctic geopolitics, hybrid security, and regional economic development.
+                        Holding a Master of Arts in International Relations (GPA 3.95, Department Distinction) from Erciyes University and a Bachelor of Science (Gold Medalist) from International Islamic University, Islamabad, his research explores great-power competition, Eurasian and Arctic geopolitics, hybrid security, and regional economic development.
                     </p>
 
                     <h3 class="sub-heading">Core Research Areas</h3>
@@ -483,7 +506,7 @@
             </div>
         </div>
 
-        <!-- ARTICLES TAB -->
+        <!-- ACADEMIC ARTICLES TAB -->
         <div id="articles" class="tab-section">
             <h2 class="section-heading">Peer-Reviewed Journal Articles</h2>
 
@@ -623,12 +646,119 @@
             </div>
         </div>
 
+        <!-- OP-ED ARTICLES TAB -->
+        <div id="oped" class="tab-section">
+            <h2 class="section-heading">Op-Ed Articles &amp; Commentary</h2>
+            <p>Featured commentaries and geopolitical analyses published across international platforms:</p>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://politicstoday.org/american-eagle-chinese-dragon-united-states-china/" target="_blank">
+                        American Eagle and Chinese Dragon: United States and China
+                    </a>
+                </div>
+                <div class="pub-meta">Published in <em>Politics Today</em></div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://www.jpost.com/opinion/new-generation-warfare-and-the-future-of-state-security-566421" target="_blank">
+                        New-generation warfare and the future of state security
+                    </a>
+                </div>
+                <div class="pub-meta">Published in <em>The Jerusalem Post</em></div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://neweasterneurope.eu/2019/04/09/russias-obsession-or-geographic-trap/" target="_blank">
+                        Russia’s obsession or geographic trap?
+                    </a>
+                </div>
+                <div class="pub-meta">Published in <em>New Eastern Europe</em></div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">
+                    <a href="https://courtingthelaw.com/2018/10/18/commentary/has-the-caspian-seas-legal-status-been-resolved/" target="_blank">
+                        Has the Caspian Sea’s Legal Status Been Resolved?
+                    </a>
+                </div>
+                <div class="pub-meta">Published in <em>Courting The Law</em></div>
+            </div>
+
+            <h3 class="sub-heading" style="margin-top: 35px;">Author Profiles &amp; Archives</h3>
+            <ul class="classic-list" style="line-height: 1.8;">
+                <li><a href="https://politicstoday.org/author/shahzada-rahim/" target="_blank">Politics Today Author Archive</a></li>
+                <li><a href="https://independentaustralia.net/profile-on/shahzada-rahim,874" target="_blank">Independent Australia Profile</a></li>
+                <li><a href="https://www.geopolitika.ru/en/person/shahzada-rahim" target="_blank">Geopolitika.ru Author Profile</a></li>
+                <li><a href="https://www.4pt.su/en/content/shahzada-rahim" target="_blank">4PT.su Author Profile</a></li>
+                <li><a href="https://dailytimes.com.pk/writer/shahzada-rahim/page/4/" target="_blank">Daily Times Column Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- SUBSTACK TAB -->
+        <div id="substack" class="tab-section">
+            <h2 class="section-heading">Substack Newsletter</h2>
+            <p>Read my ongoing geopolitical commentaries, analytical essays, and thoughts on global power shifts on Substack:</p>
+            <div style="margin-top: 25px; padding: 30px; background: #f9f9f8; border: 1px solid var(--border-light); text-align: center;">
+                <h3 style="font-family: 'Merriweather', Georgia, serif; margin-top: 0; color: var(--primary-blue);">Shahzada Rahim Substack</h3>
+                <p style="text-align: center; color: var(--text-muted);">Subscribe for regular analysis on civilizational studies, geoeconomics, and international relations.</p>
+                <a href="https://shahzadarahim.substack.com/" class="book-btn" target="_blank" style="padding: 10px 22px; font-size: 0.95rem; margin-top: 10px;">
+                    <i class="fa-solid fa-newspaper"></i> Visit My Substack
+                </a>
+            </div>
+        </div>
+
+        <!-- MEDIA APPEARANCES TAB -->
+        <div id="media" class="tab-section">
+            <h2 class="section-heading">Media Appearances &amp; Lectures</h2>
+            <p>Selected video appearances, keynote speeches, and conference presentations:</p>
+
+            <div class="media-grid">
+                <div class="media-card">
+                    <h3>1. Global Conference on Multipolarity (Speech)</h3>
+                    <a href="https://paideuma.tv/en/video/shahzada-rahim-pakistan-speech-global-conference-multipolarity" target="_blank">
+                        <i class="fa-solid fa-video"></i> Watch on Paideuma TV
+                    </a>
+                </div>
+
+                <div class="media-card">
+                    <h3>2. Geopolitical Analysis &amp; Interview Presentation</h3>
+                    <a href="https://www.youtube.com/watch?v=RIQaldRGeF4" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: #c4302b;"></i> Watch on YouTube
+                    </a>
+                </div>
+
+                <div class="media-card">
+                    <h3>3. International Relations Panel Discussion</h3>
+                    <a href="https://www.youtube.com/watch?v=dkPx38XvKx8" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: #c4302b;"></i> Watch on YouTube
+                    </a>
+                </div>
+
+                <div class="media-card">
+                    <h3>4. Discussion on Global Power Shifts</h3>
+                    <a href="https://www.youtube.com/watch?v=gWDTLmhbLlI" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: #c4302b;"></i> Watch on YouTube
+                    </a>
+                </div>
+
+                <div class="media-card">
+                    <h3>5. Structural Analysis Presentation</h3>
+                    <a href="https://www.youtube.com/watch?v=d4Z0K2f3d5I" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: #c4302b;"></i> Watch on YouTube
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- CURRICULUM VITAE TAB -->
         <div id="cv" class="tab-section">
             <h2 class="section-heading">Curriculum Vitae</h2>
             
             <p style="margin-bottom: 25px;">
-                <a href="Shahzada_Rahim_Resume.pdf" target="_blank" style="display: inline-block; background-color: var(--primary-navy); color: #ffffff; padding: 9px 18px; text-decoration: none; font-weight: 600; border-radius: 3px;">
+                <a href="Shahzada_Rahim_Resume.pdf" target="_blank" style="display: inline-block; background-color: var(--primary-blue); color: #ffffff; padding: 10px 18px; text-decoration: none; font-weight: 600; border-radius: 3px;">
                     <i class="fa-solid fa-file-pdf"></i> Download Printable CV (PDF)
                 </a>
             </p>
